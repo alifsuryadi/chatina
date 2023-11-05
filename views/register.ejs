@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/register.css" >
+    <script src="javascript/register.js" defer></script>
+    <script src="javascript/components/confirmPassword.js" defer></script>
+</head>
+
+<body>
+    <div class="register">
+        <div class="register-center">
+            <img src="images/Logo.png" alt="ChatINA Logo" width="75">
+            <h1>Register</h1>
+        </div>
+
+        <form action="/api/register" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Name" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="Email" id="email" required>
+            <div id="email-notification" style="display: none;" class="check-email">Email must contain the '@' character.</div>
+            <div style="margin-top: 0.8rem;"></div>
+
+            <label for="password">Password</label>
+            <div class="password-input">
+                <input id="password-field" type="password" class="form-control" name="password" placeholder="Password" required>
+                <span class="toggle-password" id="togglePassword" onclick="togglePasswordVisibility()">
+                    <img src="images/icons/eye-slash-fill.svg" alt="Eye fill" />
+                </span>
+            </div>
+
+            <label for="confirm_password">Confirm Password</label>
+            <div class="confirm_password-input">
+                <input id="confirm_password-field" type="password" class="form-control" name="confirmPassword"
+                    placeholder="Confirm Password" required>
+                <span class="toggle-confirm_password" id="toggleConfirmPassword"
+                    onclick="toggleConfirmPasswordVisibility()">
+                    <img src="images/icons/eye-slash-fill.svg" alt="Eye fill" />
+                </span>
+            </div>
+
+            <div class="policy">
+                <input type="checkbox" name="privacy_policy" id="privacy_policy">
+                <label for="privacy_policy">I agree the <a href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a></label>
+            </div>
+            <button>Register</button>
+        </form>
+
+
+        <p>You have account? <a href="/" class="sign-in">Sign In</a></p>
+    </div>
+</body>
+
+</html>

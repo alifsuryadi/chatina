@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css" />
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="styles/logout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="javascript/dashboard.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar kiri -->
+      <div class="side-bar">
+        <div class="logo">
+          <img src="images/Logo/logo-name-chatina.png" alt="" />
+        </div>
+        <div class="search-bar-parent">
+          <div class="search-bar">
+            <i data-feather="search"></i>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Search forum"
+            />
+          </div>
+        </div>
+
+        <!-- Group forum -->
+        <div class="group-forum-parent">
+          <div class="forum-parent">
+            <div class="forum">
+              <img src="images/Logo/logo-chatina.png" alt="" />
+              <p><a href="/dashboard">Forum ChatGpt</a></p>
+            </div>
+          </div>
+          <div class="forum-parent">
+            <div class="forum">
+              <img src="images/Logo/logo-chatina.png" alt="" />
+              <p><a href="/perplexity">Forum Perplexity</a></p>
+            </div>
+          </div>
+          <div class="add-forum-parent" id="add-forum-parent">
+            <div class="add-forum">
+              <i data-feather="plus"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Group forum -->
+
+        <hr />
+        <!-- Akun -->
+        <div class="account-container">
+          <div class="profile-container">
+            <div class="profile">
+              <img src="images/people.jpg" alt="" />
+              <p><span><%= user.name %></span></p>
+            </div>
+          </div>
+
+          <div class="profile-menu-container">
+            <div class="profile-menu">
+              <i data-feather="user"></i>
+              <p>Profile</p>
+            </div>
+          </div>
+
+          <div class="profile-menu-container" id="setting-menu">
+            <div class="profile-menu">
+              <i data-feather="settings"></i>
+              <p>Setting</p>
+            </div>
+          </div>
+          <div class="logout-menu-container">
+            <div class="logout-menu">
+              <i data-feather="log-out"></i>
+              <p>Keluar</p>
+            </div>
+          </div>
+        </div>
+        <!-- Akun -->
+      </div>
+
+      <!-- Div Fixed -->
+        <div></div>
+      <!-- Sidebar kiri -->
+            <!-- Sidebar kanan -->
+        <div class="sidebar-kanan">
+            <nav>
+                <div class="navbar">
+                <ul>
+                    <li>
+                    <a href="/dashboard"
+                        ><img src="images/Logo/icon-forum.png" alt="" />Forum</a
+                    >
+                    </li>
+                    <li>
+                    <a href="/chatai"
+                        ><img src="images/Logo/icon-chatAI.png" alt="" />Chat AI</a
+                    >
+                    </li>
+                </ul>
+                </div>
+            </nav>

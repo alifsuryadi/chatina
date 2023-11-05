@@ -1,0 +1,131 @@
+:root{
+    --biru-muda : #B6FFFA;
+    --biru-tua : #98E4FF;
+    --ungu-muda : #80B3FF;
+    --ungu-tua : #687EFF;
+    --ungu-hover : #3250fd;
+}
+
+
+
+.edit-main-profil{
+    display: none; /* Sembunyikan popup awalnya */
+    position: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Memberikan efek blur dengan warna hitam */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.edit-profile-container{
+    display: none;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+
+/* Profile Image */
+
+.edit-profile-container .profile-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.edit-profile-container .profile-center img {
+    width: 80px;
+    border: 2px solid #000; /* Mengatur border warna hitam */
+    border-radius: 50%; /* Membuat elemen berbentuk lingkaran */
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.edit-profile-container .edit-profile {
+    position: absolute;
+    bottom: -15px; /* Posisi relative terhadap parent */
+    right: -15px; /* Posisi relative terhadap parent */
+    width: 30px;
+    height: 30px;
+    background-color: var(--ungu-tua);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1; /* Menempatkan popup di atas elemen lain */
+}
+
+.edit-profile-container .edit-profile i {
+    width: 20px;
+    color: #000;
+}
+
+
+/* Profile Image */
+
+/* Form */
+.edit-profile-container .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.edit-profile-container .form-group label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.edit-profile-container .form-group input {
+    padding: 10px;
+    border: 1px solid var(--ungu-tua);
+    background-color: transparent;
+    border-radius: 5px;
+    width: 20rem;
+}
+/* Form */
+
+/* Button */
+.edit-profile-container .button-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-profile-container .button-group div,
+.edit-profile-container .button-group button {
+    background-color: var(--ungu-tua);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.edit-profile-container .button-group div:hover,
+.edit-profile-container .button-group button:hover {
+    background-color: var(--ungu-hover);
+}
+
+.button-group div a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-group div a:active{
+    color: white;
+}
+
+/* Button */

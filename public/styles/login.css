@@ -1,0 +1,211 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    :root{
+        --biru-muda : #B6FFFA;
+        --biru-tua : #98E4FF;
+        --ungu-muda : #80B3FF;
+        --ungu-tua : #687EFF;
+        --ungu-hover : #3250fd;
+    }
+
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        box-sizing: content-box;
+    }
+
+    body {
+        background-image: linear-gradient(var(--ungu-tua), var(--ungu-muda));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .login {
+        background-color: white;
+        padding: 1.2rem;
+        width: 20rem;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        padding: 3rem;
+        border-radius: 2rem;
+    }
+
+    .login-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem auto;
+    }
+
+    .login-center img{
+        margin-bottom: 1rem;
+    }
+
+
+    .login h2 {
+        text-align: center;
+    }
+
+
+
+    .login input {
+        display: block;
+        width: 100%;
+        height: 3rem;
+        margin: 0.8rem 0 1.5rem 0;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+        border-color: var(--ungu-tua);
+        cursor: text;
+    }
+
+    .login form > input{
+        margin-bottom: 0 ;
+    }
+
+    .login input:focus {
+        border-color: var(--ungu-hover);
+        outline: none !important;
+        box-shadow: 0 0 10px #719ECE;
+    }
+
+    .login button {
+        width: 95%;
+        padding: 10px;
+        background-color: var(--ungu-tua);
+        color: white;
+        border: none;
+        height: 1.5rem;
+        border-radius: 1rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .login button:hover {
+        background-color: var(--ungu-hover);
+        cursor: pointer;
+    }
+
+    .login p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+                appearance: checkbox;
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        height: 1rem;
+    }
+
+    label[for="rememberMe"]{
+        margin: 0 0.5rem;
+        line-height: 1.2rem;
+        position: absolute;
+        font-size: 0.8rem;
+    }
+
+    .forget-pw,
+    .sign-up{
+        text-decoration: none;
+    }
+
+    .forget-pw{
+        color: black;
+        font-size: 0.8rem;
+    } 
+
+    .sign-up:hover,
+    .forget-pw:hover{
+        color: #3250fd;
+    }
+
+    .inline-password{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .password-input {
+        position: relative;
+    }
+
+    .password-input input {
+        padding-right: 30px; 
+    }
+
+    .password-input .toggle-password {
+        position: absolute;
+        top: 55%;
+        right: 10px; 
+
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .popup-content {
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+
+    .close{
+        width: 80% !important;
+    }
+
+    /* Wrong POP UP */
+    #popup-wrong {
+        visibility: hidden;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: rgb(255, 83, 83);
+        color: white; /* White text color */
+        padding: 1rem;
+        border-radius: 1rem;
+        z-index: 1; 
+        transition: visibility 0s linear 3s, opacity 0.5s linear; 
+    }
+    
+    #popup-wrong.show {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 0s, opacity 0.5s linear; /* Fade in */
+    }
+
+    .check-email{
+        position: absolute;
+        font-size: 0.6rem;
+        color: red;
+    }
+
+    @media screen and (max-width:576px) {
+        .login {
+            width: 17rem;
+        }
+
+    }

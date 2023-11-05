@@ -1,0 +1,119 @@
+<%- include("partials/header.ejs") %>
+
+
+        <div class="chat-container">
+          <div class="talk-chat-container">
+            <div class="chat-receiver-container">
+              <div class="profile-receiver">
+                <img src="images/people2.jpg" alt="" width="50px" />
+              </div>
+              <div class="receiver-chat">
+                <div class="receiver-name">
+                  <span id="receiver-name">Jimmy</span>
+                </div>
+                <div class="receiver-message">
+                  <span id="receiver-message"
+                    >Omagaaaaaaaa?</span
+                  >
+                </div>
+                <div class="receiver-time">
+                  <span id="receiver-time">12.22</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="talk-chat-container">
+                <div class="chat-receiver-container">
+                  <div class="profile-receiver">
+                    <img src="images/people2.jpg" alt="" width="50px" />
+                  </div>
+                  <div class="receiver-chat">
+                    <div class="receiver-name">
+                      <span id="receiver-name">Hasbiii</span>
+                    </div>
+                    <div class="receiver-message">
+                      <span id="receiver-message"
+                        >Widihhh</span
+                      >
+                    </div>
+                    <div class="receiver-time">
+                      <span id="receiver-time">14.22</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="talk-chat-container">
+                    <div class="chat-receiver-container">
+                      <div class="profile-receiver">
+                        <img src="images/people.jpg" alt="" width="50px" />
+                      </div>
+                      <div class="receiver-chat">
+                        <div class="receiver-name">
+                          <span id="receiver-name">Alif</span>
+                        </div>
+                        <div class="receiver-message">
+                          <span id="receiver-message"
+                            >Tumben rame</span
+                          >
+                        </div>
+                        <div class="receiver-time">
+                          <span id="receiver-time">20.22</span>
+                        </div>
+                      </div>
+                    </div>
+    
+
+            <div class="chat-sender-container">
+              <div class="sender-chat">
+                <div class="sender-name">
+                  <span id="sender-name">akmal</span>
+                </div>
+                <div class="sender-message">
+                  <span id="sender-message"
+                    >Aku dimanaaa?</span
+                  >
+                </div>
+                <div class="sender-time">
+                  <span id="sender-time">16.22</span>
+                </div>
+              </div>
+
+
+
+
+
+              <% xityText.forEach((text) => { %>
+              <div class="sender-chat">
+                <div class="sender-name">
+                  <span id="sender-name">  <%= user.name %> </span>
+                </div>
+                <div class="sender-message">
+                  <span id="sender-message"
+                    ><%= text %></span>
+                </div>
+                <div class="sender-time">
+                  <span id="sender-time"><%= clock %></span>
+                </div>
+              </div>
+              <% }); %>
+              
+            </div>
+          </div>
+
+    
+          <div class="chat-box-container">
+            <form action="/perplexity" method="post">
+            <div class="chat-box-type">
+              <input type="text" name="text" placeholder="type a message" />
+              <button class="button-sending">
+                <i data-feather="send"></i>
+              </button>
+            </form>
+            </div>
+            <div class="chat-box-detail"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar kanan -->
+    <%-  include("partials/footer.ejs")  %>

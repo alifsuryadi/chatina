@@ -1,0 +1,76 @@
+<%- include("partials/header.ejs") %>
+
+
+        <div class="chat-container">
+          <div class="talk-chat-container">
+            <div class="chat-receiver-container">
+              <div class="profile-receiver">
+                <img src="images/people.jpg" alt="" width="50px" />
+              </div>
+              <div class="receiver-chat">
+                <div class="receiver-name">
+                  <span id="receiver-name">Alif Suryadi</span>
+                </div>
+                <div class="receiver-message">
+                  <span id="receiver-message"
+                    >Wsssssssssshat r u doing tdy?</span
+                  >
+                </div>
+                <div class="receiver-time">
+                  <span id="receiver-time">12.22</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-sender-container">
+
+
+              <div class="sender-chat">
+                <div class="sender-name">
+                  <span id="sender-name">akmal</span>
+                </div>
+                <div class="sender-message">
+                  <span id="sender-message"
+                    >Whaaaaaaaaaaaaaaaaaaaaat r u doing tdy?</span
+                  >
+                </div>
+                <div class="sender-time">
+                  <span id="sender-time">12.22</span>
+                </div>
+              </div>
+
+
+              <% tasks.forEach((task) => { %>
+              <div class="sender-chat">
+                <div class="sender-name">
+                  <span id="sender-name">  <%= user.name %> </span>
+                </div>
+                <div class="sender-message">
+                  <span id="sender-message"
+                    ><%= task %></span>
+                </div>
+                <div class="sender-time">
+                  <span id="sender-time"><%= clock %></span>
+                </div>
+              </div>
+              <% }); %>
+              
+            </div>
+          </div>
+
+    
+          <div class="chat-box-container">
+            <form action="/dashboard" method="post">
+            <div class="chat-box-type">
+              <input type="text" name="text" placeholder="type a message" />
+              <button class="button-sending">
+                <i data-feather="send"></i>
+              </button>
+            </form>
+            </div>
+            <div class="chat-box-detail"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar kanan -->
+    <%-  include("partials/footer.ejs")  %>

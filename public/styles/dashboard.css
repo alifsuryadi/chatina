@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px 1fr; /* Sidebar dengan basis 200px, Sidebar-kanan auto */
+}
+
+
+/* Sidebar kiri */
+.side-bar { 
+    position: fixed;
+    width: 350px;
+    height: 100dvh;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.search-bar-parent {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.1rem;
+    border: 1px solid #687EFF;
+    border-radius: 2rem;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.search-bar input{
+    border: none;
+    outline: none;
+    margin: 0 5px;
+}
+
+
+/* Group Forum */
+.group-forum-parent{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem;
+    cursor: pointer;
+}
+
+
+
+.forum-parent{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #687EFF;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.forum-parent:hover{
+    background-color: #cbcbcb;
+}
+
+.forum{
+    display: flex;
+}
+
+.forum-parent a{
+    text-decoration: none;
+    color: black;
+}
+
+.forum img{
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.add-forum-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #687EFF;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.add-forum-parent:hover{
+    background-color: #656FAB;
+}
+
+.add-forum{
+    display: flex;
+    color: white;
+}
+
+.add-forum i{
+    display: block;
+}
+
+/* Group Forum */
+
+/* HR */
+hr{
+    background: #687EFF;
+}
+
+
+/* HR */
+
+
+/* Profile */
+.account-container{
+    margin-top: 2rem;
+}
+
+.profile-container{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.profile p span{
+    margin-left: 1rem;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+.profile-menu-container{
+    display: flex;
+    padding: 12px;
+    border: 1px solid black;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.profile-menu-container:hover{
+    background: #687EFF;
+}
+
+.profile-menu{
+    display: flex;
+    align-items: center;
+}
+
+.profile-menu p{
+    margin-left: 12px;
+}
+
+/*logout  */
+.logout-menu-container{
+    display: flex;
+    padding: 12px;
+    border: 1px solid black;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+}
+
+.logout-menu-container:hover{
+    background-color: rgb(255, 138, 138);
+}
+
+.logout-menu{
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.logout-menu p{
+    margin-left: 12px;
+}
+/*logout  */
+
+/* Profile */
+
+/* Sidebar kiri */
+
+
+/* Sidebar kanan */
+.sidebar-kanan{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    overflow-y:scroll ;
+}
+
+
+/* Navbar */
+
+.navbar ul li {
+    background-color: #687EFF;
+    padding: 1rem ;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.navbar ul li:hover {
+    background-color: #656FAB;
+}
+
+nav{
+    margin-top: 1.5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+li{
+    display: inline;
+    
+}
+
+li img{
+    width: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+/* Navbar */
+
+
+/* Chat Box */
+.chat-container{
+    min-height: 1000px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(131deg, #687EFF 14.75%, #737FC5 64.63%, #656FAB 73.11%);
+}
+
+.talk-chat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.profile-receiver img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.chat-receiver-container,
+.chat-sender-container {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.chat-receiver-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat-sender-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.receiver-chat{
+    padding: 0.3rem 1rem;
+    margin-left: 0.5rem;
+    width: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.receiver-name{
+    font-size: 0.8rem;
+    color: #656FAB;
+}
+
+.receiver-message{
+    font-size: 1rem;
+}
+
+.receiver-time{
+    text-align: right;
+    opacity: 50%;
+    font-size: 0.7rem;
+}
+
+
+/* sender */
+.sender-chat{
+    margin-bottom: 0.3rem;
+    padding: 0.3rem 1rem;
+    margin-left: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sender-name{
+    font-size: 0.8rem;
+    color: #656FAB;
+}
+
+.sender-message{
+    font-size: 1rem;
+}
+
+.sender-time{
+    text-align: right;
+    opacity: 50%;
+    font-size: 0.7rem;
+}
+/* sender */
+
+
+/* Masukan Pesan */
+.chat-box-container{
+    position: relative;
+    margin: 2rem;
+    background-color: black;
+    
+}
+
+.chat-box-type{
+    position: fixed;
+    bottom: 1rem;
+    display: flex;
+    padding: 1.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 12px;
+    height: 5rem;
+    text-align: center;
+    background-color: #737FC5;
+}
+
+.chat-box-type input{
+    width: 500px;
+    text-align: left;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.button-sending {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+
+/* Masukan Pesan */
+
+/* Chat Box */
+/* Sidebar kanan */
+
+.sidebar-kanan {
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+
+.chat-ai-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background: linear-gradient(131deg, #687EFF 14.75%, #737FC5 64.63%, #656FAB 73.11%);
+}
+
+.chat-ai-box{
+    margin: 2rem;
+    background: white;
+    border-radius: 1rem;
+}
+
+.chat-ai-box:hover{
+    cursor: pointer;
+}
+
+.chat-ai-box img{
+    width: 25rem;
+}
+
+.sender-message span {
+    word-wrap: break-word;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.coming-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.coming-popup .popup-content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.coming-popup .close{
+    width: 80% !important;
+    background-color: #687EFF;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.coming-popup .close:hover{
+    width: 80% !important;
+    background-color: #656FAB;
+}
+
+@media screen and (min-width: 900px) {
+
+    .chat-box-type{
+        position: fixed;
+        width: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .side-bar { 
+        width: 100%;
+        position: relative;
+    }
+
+    .chat-ai-box img{
+        width: 16rem;
+    }
+
+    .chat-ai-box{
+        margin: 1rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; /* Sidebar dengan basis 200px, Sidebar-kanan auto */
+        grid-template-rows: 700px 1fr;
+    }
+
+
+    .chat-box-type{
+        position: sticky;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .side-bar {
+        width: 100%;
+        max-width: 100%; /* Batasi lebar maksimum */
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .side-bar{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-height : 950px) {
+    .chat-container{
+        min-height: 2000px;
+    }
+}
+
+@media screen and (min-height : 1950px) {
+    .chat-container{
+        min-height: 3000px;
+    }
+}
