@@ -63,6 +63,12 @@ Start the server
   node server.js
 ```
 
+## All Contributors
+
+Here are some people who have been involved in the creation of the ChatIna project. Thank you for your role in contributing your ideas!
+
+<a href="https://github.com/alifsuryadi/chatina/graphs/contributors"><img src="https://contrib.rocks/image?repo=alifsuryadi/chatina" alt="All of amazing contributors"></a>
+
 ---
 
 
