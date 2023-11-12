@@ -18,13 +18,6 @@ Join a group or create your own.
 Start discussing, sharing, and learning!
 
 
-# 📜 Rules
-Please respect all forum members and keep discussions polite and constructive.
-Irrelevant or spam content will be removed.
-Repeated violations of these rules may result in suspension or termination of the account.
-
-
-
 ---
 ## Run Locally
 
@@ -55,6 +48,12 @@ Start the server
 ```bash
   node server.js
 ```
+
+
+# 📜 Rules
+Please respect all forum members and keep discussions polite and constructive.
+Irrelevant or spam content will be removed.
+Repeated violations of these rules may result in suspension or termination of the account.
 
 
 # 💡 Contributions
