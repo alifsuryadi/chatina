@@ -18,20 +18,6 @@ Join a group or create your own.
 Start discussing, sharing, and learning!
 
 
-# 📜 Rules
-Please respect all forum members and keep discussions polite and constructive.
-Irrelevant or spam content will be removed.
-Repeated violations of these rules may result in suspension or termination of the account.
-
-
-# 💡 Contributions
-We are always open to suggestions and contributions from the community. If you have an idea for a new feature or improvement, don’t hesitate to share it on the forum or contact us directly.
-
-Welcome to Chatina, the gathering place for AI enthusiasts to share knowledge! 🎉
-
-
-
-
 ---
 ## Run Locally
 
@@ -63,14 +49,29 @@ Start the server
   node server.js
 ```
 
+
+# 📜 Rules
+Please respect all forum members and keep discussions polite and constructive.
+Irrelevant or spam content will be removed.
+Repeated violations of these rules may result in suspension or termination of the account.
+
+
+# 💡 Contributions
+We are always open to suggestions and contributions from the community. If you have an idea for a new feature or improvement, don’t hesitate to share it on the forum or contact us directly.
+
+Welcome to Chatina, the gathering place for AI enthusiasts to share knowledge! 🎉
+
+
 ## All Contributors
 
 Here are some people who have been involved in the creation of the ChatIna project. Thank you for your role in contributing your ideas!
 
-<a href="https://github.com/alifsuryadi/chatina/graphs/contributors"><img src="https://contrib.rocks/image?repo=alifsuryadi/chatina" alt="All of amazing contributors"></a>
+<a href="https://github.com/alifsuryadi/chatina/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=alifsuryadi/chatina" alt="All of amazing contributors">
+</a>
+
 
 ---
-
 
 ## Thanks for visiting
 
