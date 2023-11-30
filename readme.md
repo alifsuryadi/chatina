@@ -66,5 +66,9 @@ Start the server
 ---
 
 
+## LICENSE 
+[MIT License](LICENSE)
+
+
 ## Thanks for visiting
 
