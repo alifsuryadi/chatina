@@ -76,6 +76,6 @@ Here are some people who have been involved in the creation of the ChatIna proje
 ## LICENSE 
 [MIT License](LICENSE)
 
-
+---
 ## Thanks for visiting
 
